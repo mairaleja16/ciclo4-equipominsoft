@@ -8,3 +8,9 @@ Integrante N° 2
 Nombre: Wilman Alfonso Vargas Suaza
 Linkedin: https://www.linkedin.com/in/wilman-alfonso-vargas-suaza-3aa961135/
 Quiero aprender a programar porque me gusta mucho la lógica, la he aplicado en otros ámbitos de mi carrera profesional y quería tener la oportunidad de hacerlo desde la programación. 
+
+Integrante N° 3
+Nombre: José Antonio Vargas Barinas
+Ingeniero Mecatronico, Maestrante en Gerencia de Proyectos 
+Me apasiona la programación y el desarrollo aplicaciones, considero que esta es una gran oportunidad para actualizarme con respecto 
+a los nuevos lenguajes de program más aún cuando hoy en día todo se mueve el el mundo de las aplicaciones moviles y web. 
