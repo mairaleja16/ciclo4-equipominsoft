@@ -6,8 +6,8 @@ aprender algo que me apasiona como lo es el desarrollo web.
 
 Integrante N° 2
 Nombre: Wilman Alfonso Vargas Suaza
-Linkedin: https://www.linkedin.com/in/wilman-alfonso-vargas-suaza-3aa961135/
-Quiero aprender a programar porque me gusta mucho la lógica, la he aplicado en otros ámbitos de mi carrera profesional y quería tener la oportunidad de hacerlo desde la programación. 
+Rol: Analista
+Descripción: Quiero aprender a programar porque me gusta mucho la lógica, la he aplicado en otros ámbitos de mi carrera profesional y quería tener la oportunidad de hacerlo desde la programación. 
 
 Integrante N° 3
 Nombre: José Antonio Vargas Barinas
