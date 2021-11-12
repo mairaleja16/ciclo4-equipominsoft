@@ -12,6 +12,6 @@ Descripción: Quiero aprender a programar porque me gusta mucho la lógica, la h
 
 Integrante N° 3
 Nombre: José Antonio Vargas Barinas
-Ingeniero Mecatronico, Maestrante en Gerencia de Proyectos 
-Me apasiona la programación y el desarrollo aplicaciones, considero que esta es una gran oportunidad para actualizarme con respecto 
-a los nuevos lenguajes de program más aún cuando hoy en día todo se mueve el el mundo de las aplicaciones moviles y web. 
+Rol: Administrador de Base de Datos
+Descripción: Me apasiona la programación y el desarrollo aplicaciones, considero que esta es una gran oportunidad para actualizarme con respecto 
+             a los nuevos lenguajes de program más aún cuando hoy en día todo se mueve el el mundo de las aplicaciones moviles y web. 
