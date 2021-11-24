@@ -1,0 +1,7 @@
+Datos de conexión a mongoAtlas:
+username: minsoft
+password: minsoftadmin
+link: mongodb+srv://<username>:<password>@minsoft.ghbip.mongodb.net
+Database Name: "projectDB"
+Database Collections Schema: schemas.txt
+
