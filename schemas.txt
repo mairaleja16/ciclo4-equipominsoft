@@ -1,7 +1,8 @@
 //users schema
 ({
+  _id: ObjectId
   mail: String,
-  userId: String,
+  userDNI: String, 
   name: String,
   password: String,
   rol: {
@@ -14,15 +15,16 @@
     enum: ["pendiente", "autorizado", "noautorizado"],
   },
 });
-//projectsManagment schema
+//projectsManagment schema 
 ({
+  _id: ObjectId
   projectName: String,
   overallObjetives: String,
   specificObjetives: String,
   budget: String,
   startDate: Date,
   finishDate: Date,
-  userId: String,
+  userDNI: String,
   name: String,
   projectStatus: {
     type: String,
@@ -35,8 +37,9 @@
     enum: ["iniciado", "desarrollo", "terminado"],
   },
 });
-//inscriptions schema
+//inscriptions schema 
 ({
+  _id: ObjectId
   studentName: String,
   projectName: String,
   admissionDate: Date,
@@ -48,6 +51,7 @@
 });
 //progress schema
 ({
+  _id: ObjectId
   projectName: String,
   progressDate: Date,
   progressDescription: String,

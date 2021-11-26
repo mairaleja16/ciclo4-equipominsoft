@@ -12,7 +12,7 @@ db.createCollection("users)
 // CREAR NUEVO USUARIO (EJEMPLO)
 db.users.insertOne(    {
         "mail": "juanarango@hotmail.com",
-        "userId": "1101321059",
+        "userDNI": "1101321059",
         "name": "Juan Manuel Arango Castro",
         "password": "juan123",
         "rol": "estudiante",
@@ -51,3 +51,7 @@ db.users.updateMany( { "rol" : { $eq: "estudiante" } },{ $set: { "status": "auto
 //CONSULTAR LOS PROYECTOS 
 db.projectsManagment.find().pretty();
 
+db.users.updateMany( {}, { $rename: { "userId": "userDNI" } } )
+
+//ELIMINAR UNA COLECCIÓN (EJEMPLO)
+db.users.deleteOne({"_id" : ObjectId("61a1523d3ad2271d063db611")})
