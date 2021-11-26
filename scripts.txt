@@ -32,23 +32,6 @@ db.projectsManagment.insertOne({
         "projectPhase": "desarrollo"
     })
 
-// CREAR NUEVA INSCRIPCIÓN 
-db.inscriptions.insertOne({
-    "studentName": "David Álvarez Torres",
-    "projectName": "Proyecto Zafiro",
-    "admissionDate": "6/8/2019",
-    "egressDate": "17/10/2021",
-    "inscripcionStatus": "Aceptada"
-})
-
-//CREAR NUEVO AVANCE DEL PROYECTO
-db.projectsProgress.insertOne({
-    "projectName": "Proyecto Zafiro"
-    "progressDate": "14/2/2020"
-    "progressDescription": "El proyecto presenta un avance del 15%"
-    "comments": "Es necesario realizar otro seguimiento de avance en un mes"
-})
-
 //CONSULTAR EL ESTADO DE UN PROYECTO
 db.projectsManagment.find({projectStatus:{$eq:"activo"}})
 db.projectsManagment.find({projectName:{$eq:"Construcción de PTAR"}})
