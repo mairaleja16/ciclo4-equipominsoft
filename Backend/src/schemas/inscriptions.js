@@ -1,24 +1,24 @@
 const {InscriptionTC} = require("../model/inscriptions");
 
 const InscriptionQuery = {
-    userById: InscriptionTC.getResolver("findById"),
-    userByIds: InscriptionTC.getResolver("findByIds"),
-    userOne: InscriptionTC.getResolver("findOne"),
-    userMany: InscriptionTC.getResolver("findMany"),
-    userCount: InscriptionTC.getResolver("count"),
-    userConnection: InscriptionTC.getResolver("connection"),
-    userPagination: InscriptionTC.getResolver("pagination")
+    inscriptionsById: InscriptionTC.getResolver("findById"),
+    inscriptionsByIds: InscriptionTC.getResolver("findByIds"),
+    inscriptionsOne: InscriptionTC.getResolver("findOne"),
+    inscriptionsMany: InscriptionTC.getResolver("findMany"),
+    inscriptionsCount: InscriptionTC.getResolver("count"),
+    inscriptionsConnection: InscriptionTC.getResolver("connection"),
+    inscriptionsPagination: InscriptionTC.getResolver("pagination")
 };
 
 const InscriptionMutation = {
-    userCreateOne: InscriptionTC.getResolver("createOne"),
-    userCreateMany: InscriptionTC.getResolver("createMany"),
-    userUpdateById: InscriptionTC.getResolver("updateById"),
-    userUpdateOne: InscriptionTC.getResolver("updateOne"),
-    userUpdateMany: InscriptionTC.getResolver("updateMany"),
-    userRemoveById: InscriptionTC.getResolver("removeById"),
-    userRemoveOne: InscriptionTC.getResolver("removeOne"),
-    userRemoveMany: InscriptionTC.getResolver("removeMany")
+    inscriptionsCreateOne: InscriptionTC.getResolver("createOne"),
+    inscriptionsCreateMany: InscriptionTC.getResolver("createMany"),
+    inscriptionsUpdateById: InscriptionTC.getResolver("updateById"),
+    inscriptionsUpdateOne: InscriptionTC.getResolver("updateOne"),
+    inscriptionsUpdateMany: InscriptionTC.getResolver("updateMany"),
+    inscriptionsRemoveById: InscriptionTC.getResolver("removeById"),
+    inscriptionsRemoveOne: InscriptionTC.getResolver("removeOne"),
+    inscriptionsRemoveMany: InscriptionTC.getResolver("removeMany")
 };
 
 module.exports = { InscriptionQuery, InscriptionMutation };
