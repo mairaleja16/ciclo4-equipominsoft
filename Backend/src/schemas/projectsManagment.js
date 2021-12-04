@@ -39,4 +39,4 @@ const ProjectsManagmentMutation = {
 
 }
 
-module.exports = {ProjectsManagmentQuery: ProjectsManagmentQuery, ProjectsManagmentMutation: ProjectsManagmentMutation}
+module.exports = {ProjectsManagmentQuery, ProjectsManagmentMutation}
