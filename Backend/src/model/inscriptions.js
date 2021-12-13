@@ -10,7 +10,7 @@ const InscriptionSchema = new Schema(
         egressDate: Date,
         inscriptionStatus: {
           type: String,
-          enum: ["aceptada", "rechazada"],
+          enum: ["aceptada", "pendiente", "rechazada"],
       },
 });
 

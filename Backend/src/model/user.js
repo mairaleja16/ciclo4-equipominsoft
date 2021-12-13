@@ -4,16 +4,24 @@ const { composeWithMongoose } = require("graphql-compose-mongoose");
 
 const UserSchema = new Schema(
     {
+      mail: String,
       name: String,
-      email: String,
-      phone: String,
-      profileImage: String,
+      password: String,
+      rol: {
+        type: String,
+        enum: ["estudiante", "lider", "administrador"], 
+      },
+      status: {
+        type: String,
+        default: "pendiente",
+        enum: ["pendiente", "autorizado", "no autorizado"],
+      },
+      userDNI: String,
     },
-    {
-      timestamps: { createdAt: "created_at", update: "updated_at" },
-    }
-  );
-  
+
+    //{timestamps: { createdAt: "created_at", updateAt: "updated_at" }}
+    );  
+ 
   module.exports = {
     UserSchema: mongoose.model("users", UserSchema),
     UserTC: composeWithMongoose(mongoose.model("users", UserSchema)),
