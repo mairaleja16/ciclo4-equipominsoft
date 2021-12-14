@@ -1,4 +1,4 @@
-/*require("dotenv").config();
+require("dotenv").config();
 const mongoose = require('mongoose');
 
 const dbUsername = process.env.DB_USERN;
@@ -18,4 +18,4 @@ const dbConnection = mongoose.connect(mongoUrl, {useNewUrlParser: true, useUnifi
   }
 });
 
-module.exports = dbConnection;*/
+module.exports = dbConnection;
