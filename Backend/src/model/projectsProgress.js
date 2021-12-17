@@ -4,7 +4,7 @@ const {
   composeWithMongoose
 } = require("graphql-compose-mongoose");
 
-const ProjectProgressSchema = new Schema({
+const ProgressSchema = new Schema({
     projectName: String,
     progressDate: Date,
     progressDescription: String,
@@ -19,9 +19,9 @@ const ProjectProgressSchema = new Schema({
 module.exports = {
   ProjectProgressSchema: mongoose.model(
     "projectsProgress",
-    ProjectProgressSchema
+    ProgressSchema
   ),
   ProjectProgressTC: composeWithMongoose(
-    mongoose.model("projectsProgress", ProjectProgressSchema)
+    mongoose.model("projectsProgress", ProgressSchema)
   ),
 };

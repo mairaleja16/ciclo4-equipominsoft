@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const { composeWithMongoose } = require("graphql-compose-mongoose");
 
-const ProjectsManagmentSchema = new Schema(
+const ProjectSchema = new Schema(
   {
     projectName: String,
     overallObjetives: String,
@@ -32,7 +32,7 @@ const ProjectsManagmentSchema = new Schema(
 );
 
 module.exports = {
-  ProjectsManagmentSchema: mongoose.model("projectsManagment", ProjectsManagmentSchema),
-  ProjectsManagmentTC: composeWithMongoose(mongoose.model("projectsManagment", ProjectsManagmentSchema)
+  ProjectsManagmentSchema: mongoose.model("projectsManagment", ProjectSchema),
+  ProjectsManagmentTC: composeWithMongoose(mongoose.model("projectsManagment", ProjectSchema)
   ),
 };

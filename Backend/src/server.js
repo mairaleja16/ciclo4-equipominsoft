@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const {graphqlHTTP} = require("express-graphql");
 const logger = require("./core/logger");
@@ -9,6 +10,11 @@ const extensions = ({context}) => {
         runTime: Date.now() - context.startTime,
     };
 };
+var corsOptions = {
+    origin: '*',
+    credentials: true 
+  };
+  app.use(cors(corsOptions));
 
 app.use(logger);
 const port = process.env.PORT || 8080;

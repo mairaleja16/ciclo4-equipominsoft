@@ -1,25 +1,26 @@
 {
-    "name": "backend MINSOFT",
+    "name": "minsoft",
     "version": "1.0.0",
     "description": "\"Stack mern\"",
     "main": "src/server.js",
     "scripts": {
-      "start": "nodemon src/server.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "nodemon src/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "David G",
     "license": "ISC",
     "dependencies": {
-      "dotenv": "^10.0.0",
-      "express": "^4.17.1",
-      "express-graphql": "^0.12.0",
-      "express-winston": "^4.0.5",
-      "graphql": "^15.3.0",
-      "graphql-compose": "^7.22.1",
-      "graphql-compose-mongoose": "^9.0.0",
-      "mongoose": "^5.10.9",
-      "nodemon": "^2.0.15",
-      "winston": "^3.3.3",
-      "winston-mongodb": "^5.0.5"
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-graphql": "^0.12.0",
+        "express-winston": "^4.0.5",
+        "graphql": "^15.3.0",
+        "graphql-compose": "^7.22.1",
+        "graphql-compose-mongoose": "^9.0.0",
+        "mongoose": "^5.10.9",
+        "nodemon": "^2.0.15",
+        "winston": "^3.3.3",
+        "winston-mongodb": "^5.0.5"
     }
-  }
+}
