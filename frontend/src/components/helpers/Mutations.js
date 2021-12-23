@@ -1,7 +1,8 @@
 import {
     gql
   } from "@apollo/client";
- const CREATE_USERS = gql`  mutation createUser($record: CreateOneusersInput!){
+ export const CREATE_USERS = gql`
+    mutation createUser($record: CreateOneusersInput!){
     userCreateOne(record:$record){
       record {
         mail
@@ -18,4 +19,3 @@ import {
     }
   }
   `;
-export default CREATE_USERS

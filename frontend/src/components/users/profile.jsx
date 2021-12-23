@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Projects() {
+export default function Profile() {
     return (
         <div>
-            <h1>Gestión de Proyectos</h1>
+            <h1>Perfil del Usuario</h1>
         </div>
     )
 }

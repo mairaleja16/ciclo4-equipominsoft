@@ -1,6 +1,7 @@
 import React from "react";
 import {useState} from "react";
-import {Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavLink, NavItem} from "reactstrap";
+import {Nav, Navbar, NavbarBrand, NavbarToggler, Collapse,NavItem} from "reactstrap";
+import { NavLink } from "react-router-dom"
 
 
 export default function Navigation() {
@@ -25,24 +26,24 @@ export default function Navigation() {
                 <Collapse isOpen={isOpen} navbar className="row">
                     <Nav className="mr-auto col-md-8" navbar>
                         <NavItem className="nav-item">
-                            <NavLink className="nav-link" exact to="/" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Usuarios</NavLink>
+                            <NavLink className="nav-link" exact to="/users" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Usuarios</NavLink>
                         </NavItem>
                         <NavItem className="nav-item">
-                            <NavLink className="nav-link" to="/newproduct" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Proyectos</NavLink>
+                            <NavLink className="nav-link" to="/projects" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Proyectos</NavLink>
                         </NavItem>
                         <NavItem className="nav-item">
-                            <NavLink className="nav-link" to="/products-list" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Inscripciones</NavLink>
+                            <NavLink className="nav-link" to="/inscriptions" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Inscripciones</NavLink>
                         </NavItem>
                         <NavItem className="nav-item">
-                            <NavLink className="nav-link" to="/sales" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Avances</NavLink>
+                            <NavLink className="nav-link" to="/progress" activeClassName="active" onClick={toggleWhenOpen}>Gestión de Avances</NavLink>
                         </NavItem>
                     </Nav>
                     <Nav className="col-md-4" navbar>
                         <NavItem className="nav-item">
-                            <NavLink className="nav-link" to="#" activeClassName="active" onClick={toggleWhenOpen}>Perfil </NavLink>
+                            <NavLink className="nav-link" to="profile" activeClassName="active" onClick={toggleWhenOpen}>Perfil </NavLink>
                         </NavItem>
                         <NavItem className="nav-item">
-                            <NavLink className="nav-link" to="#" activeClassName="active" onClick={toggleWhenOpen}>Registrarse </NavLink>
+                            <NavLink className="nav-link" to="register" activeClassName="active" onClick={toggleWhenOpen}>Registrarse </NavLink>
                         </NavItem>
                         <NavItem className="nav-item">
                             <NavLink className="nav-link" to="#" activeClassName="active" onClick={toggleWhenOpen}>Cerrar Sesión </NavLink>

@@ -1,14 +1,14 @@
 import {
     gql
   } from "@apollo/client";
- const USER_BY_ID = gql`query buscarUsuario($filter: FilterFindManyusersInput){
+const USER_BY_ID = gql`query buscarUsuario($filter: FilterFindManyusersInput){
     userMany(filter:$filter){
-      name
       mail
+      name
+      password
       status
       userDNI
       rol
-      password
     }
   }
   `;
