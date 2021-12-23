@@ -1,0 +1,57 @@
+Datos de conexión a mongoAtlas:
+username: minsoft
+password: minsoftadmin
+link: mongodb+srv://<username>:<password>@minsoft.ghbip.mongodb.net
+Database Name: "projectDB"
+Database Collections Schema: schemas.txt
+
+//Scripts para consultas en mongodb
+
+// CREAR COLECCIÓN DE USUARIOS
+db.createCollection("users)
+// CREAR NUEVO USUARIO (EJEMPLO)
+db.users.insertOne(    {
+        "mail": "juanarango@hotmail.com",
+        "userDNI": "1101321059",
+        "name": "Juan Manuel Arango Castro",
+        "password": "juan123",
+        "rol": "estudiante",
+        "status": "pendiente"
+    })
+// CREAR NUEVO PROYECTO (EJEMPLO)
+db.projectsManagment.insertOne({
+        "projectName": "Análisis de calidad del agua",
+        "overallObjetives": "Realizar un análisis químico de la calidad del agua del municipio de San Gil",
+        "specificObjetives": "Hacer estudios compartativos de la calidad del agua potable en San Gil",
+        "budget": 10000000,
+        "startDate": "23/01/2020",
+        "finishDate": "25/10/2021",
+        "userId": "1101321062",
+        " name": "Artemisa Rangel Orozco",
+        "projectStatus": "activo",
+        "projectPhase": "desarrollo"
+    })
+
+//CONSULTAR EL ESTADO DE UN PROYECTO
+db.projectsManagment.find({projectStatus:{$eq:"activo"}})
+db.projectsManagment.find({projectName:{$eq:"Construcción de PTAR"}})
+
+//ACTUALIZAR EL ESTADO DEL PROYECTO
+db.projectsManagment.updateOne({"projectName" : "Construcción de PTAR"},{$set : {"projectStatus" : "inactivo"}})
+
+//ACTUALIZAR LA FASE DEL PROYECTO
+db.projectsManagment.updateOne({"projectName" : "Análisis de calidad del agua"},{$set : {"projectPhase" : "terminado"}})
+
+//CONSULTAR LOS ESTUDIANTES INSCRITOS
+db.users.find({ rol: { $eq: "estudiante" }}).pretty();
+
+//ACTUALIZAR EL ESTADO DE LOS ESTUDIANTES DE PENDIENTE A AUTORIZADO
+db.users.updateMany( { "rol" : { $eq: "estudiante" } },{ $set: { "status": "autorizado"} } )
+
+//CONSULTAR LOS PROYECTOS 
+db.projectsManagment.find().pretty();
+
+db.users.updateMany( {}, { $rename: { "userId": "userDNI" } } )
+
+//ELIMINAR UNA COLECCIÓN (EJEMPLO)
+db.users.deleteOne({"_id" : ObjectId("61a1523d3ad2271d063db611")})

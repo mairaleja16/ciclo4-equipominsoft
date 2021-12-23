@@ -1,0 +1,59 @@
+//users schema
+({
+  _id: ObjectId
+  mail: String,
+  userDNI: String, 
+  name: String,
+  password: String,
+  rol: {
+    type: String,
+    enum: ["estudiante", "lider", "administrador"],
+  },
+  status:  {
+    type: String,
+    default: "pendiente",
+    enum: ["pendiente", "autorizado", "noautorizado"],
+  },
+});
+//projectsManagment schema 
+({
+  _id: ObjectId
+  projectName: String,
+  overallObjetives: String,
+  specificObjetives: String,
+  budget: String,
+  startDate: Date,
+  finishDate: Date,
+  userDNI: String,
+  name: String,
+  projectStatus: {
+    type: String,
+    default: "inactivo",
+    enum: ["activo", "inactivo"],
+  },
+  projectPhase: {
+    type: String,
+    default: null,
+    enum: ["iniciado", "desarrollo", "terminado"],
+  },
+});
+//inscriptions schema 
+({
+  _id: ObjectId
+  studentName: String,
+  projectName: String,
+  admissionDate: Date,
+  egressDate: Date,
+  inscriptionStatus: {
+    type: String,
+    enum: ["aceptada", "rechazada"]
+  },
+});
+//progress schema
+({
+  _id: ObjectId
+  projectName: String,
+  progressDate: Date,
+  progressDescription: String,
+  comments: String,
+});
