@@ -19,3 +19,25 @@ import {
     }
   }
   `;
+
+export const CREATE_PROJECT = gql`mutation createProject($record:CreateOneprojectsManagmentInput!){
+  projectsManagmentCreateOne(record:$record){
+     record {
+       projectName
+       startDate
+       projectPhase
+       projectStatus
+       overallObjetives
+       specificObjetives
+       budget
+       finishDate
+       userDNI
+       name
+
+     },
+     recordId,
+     error {
+       message
+     }
+   }
+ }`

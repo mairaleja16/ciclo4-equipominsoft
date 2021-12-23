@@ -4,7 +4,7 @@ import Users from "./components/users/users";
 import Projects from "./components/projects/projectsManagment";
 import Navigation from "./components/navigation";
 import Registro from "./components/users/registro";
-import Inscriptions from "./components/projects/projectsInscriptions";
+import Inscriptions from "./components/projects/inscriptionToProjects";
 import Progress from "./components/projects/projectsProgress";
 import Profile from "./components/users/profile";
 

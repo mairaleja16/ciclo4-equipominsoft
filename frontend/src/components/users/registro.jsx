@@ -7,7 +7,7 @@ import { useMutation } from "@apollo/client"
 export default function Registro() {
     const [register, setRegister] = useState({ "status": "pendiente" })
 
-    const [createUser, {loading, error}] = useMutation(CREATE_USERS)
+    const [createUser, { loading, error }] = useMutation(CREATE_USERS)
 
     const onSubmit = (event) => {
         event.preventDefault()
@@ -56,7 +56,7 @@ export default function Registro() {
                         name="mail"
                         placeholder="Email"
                         type="email"
-                        autocomplete="off"
+                        autoComplete="off"
                         required
                         onChange={handleInputChange}
                     />
@@ -66,24 +66,22 @@ export default function Registro() {
                 </FormGroup>
                 <FormGroup floating className="col-12 col-md-8 col-lg-6">
                     <Input
-                        className="mt-2"
                         id="nombre"
                         name="name"
                         placeholder="Nombre"
                         type="text"
-                        autocomplete="off"
+                        autoComplete="off"
                         required
                         onChange={handleInputChange} />
                     <Label for="nombre">Nombre</Label>
                 </FormGroup>
                 <FormGroup floating className="col-12 col-md-8 col-lg-6">
                     <Input
-                        className="mt-2"
                         id="identificacion"
                         name="userDNI"
                         placeholder="Identificación"
                         type="text"
-                        autocomplete="off"
+                        autoComplete="off"
                         aria-required="true"
                         required
                         onChange={handleInputChange} />
@@ -91,12 +89,11 @@ export default function Registro() {
                 </FormGroup>
                 <FormGroup floating className="col-12 col-md-8 col-lg-6">
                     <Input
-                        className="mt-2"
                         id="password"
                         name="password"
                         placeholder="Contraseña"
                         type="password"
-                        autocomplete="off"
+                        autoComplete="off"
                         aria-required="true"
                         required
                         onChange={handleInputChange} />
@@ -109,7 +106,7 @@ export default function Registro() {
                         name="rol"
                         placeholder="rol"
                         type="select"
-                        autocomplete="off"
+                        autoComplete="off"
                         aria-required="true"
                         onChange={handleInputChange}>
                         <option>estudiante</option>
@@ -119,19 +116,22 @@ export default function Registro() {
                 </FormGroup>
                 <FormGroup className="col-12 col-md-8 col-lg-6" >
                     <Label for="estado">Estado del usuario</Label>
-                    <Input className="mt-2"
+                    <Input
                         name="status"
                         id="estado"
                         readOnly
                         placeholder="pendiente"
-                        autocomplete="off"
+                        autoComplete="off"
                         aria-required="true"
                         onChange={handleInputChange}>
                     </Input>
                 </FormGroup>
-                <Button 
-                type="submit" 
-                className="btn col-sm-6 secondaryButton"> Registrar </Button>
+                <Button
+                    type="submit"
+                    color="success"
+                    outline
+                    className="col-12 col-md-8 col-lg-6"
+                > Registrar </Button>
             </Form>
         </div>
     )
