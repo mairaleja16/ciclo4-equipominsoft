@@ -28,5 +28,19 @@ query buscarProyectos($filter:FilterFindManyprojectsManagmentInput){
     name
     userDNI
   }
-}`
+}`;
+
+export const VALIDATE_USER = gql`query buscarUsuario($filter: FilterFindOneusersInput){
+  userOne(filter:$filter){
+    mail
+    name
+    password
+    status
+    userDNI
+    rol
+  }
+}
+`;
+
+
 export default USER_BY_ID

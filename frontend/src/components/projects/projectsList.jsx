@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Button, Card, CardBody, CardSubtitle, CardText, CardTitle } from 'reactstrap'
+import { Button, Card, CardBody, CardText, CardTitle } from 'reactstrap'
 import { useQuery } from '@apollo/client';
 import { PROJECTS_LIST } from '../helpers/Queries';
 

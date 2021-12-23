@@ -20,7 +20,7 @@ export default function Navigation() {
     return (
             <Navbar color="dark" dark expand="lg" >
                 {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                <NavbarBrand >Proyectos Minsoft</NavbarBrand>
+                <NavbarBrand >MinsoftProjects</NavbarBrand>
                 <NavbarToggler onClick={toggle} >
                 </NavbarToggler>
                 <Collapse isOpen={isOpen} navbar className="row">

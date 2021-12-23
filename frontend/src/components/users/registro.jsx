@@ -49,7 +49,7 @@ export default function Registro() {
     return (
         <div className="container">
             <h1>Registro de Usuario</h1>
-            <Form inline className="row" id="create-user-form" onSubmit={onSubmit} autocomplete="off">
+            <Form inline className="row" id="create-user-form" onSubmit={onSubmit} autoComplete="off">
                 <FormGroup floating className="col-12 col-md-8 col-lg-6">
                     <Input
                         id="Email"

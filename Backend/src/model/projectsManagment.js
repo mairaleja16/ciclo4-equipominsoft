@@ -4,25 +4,49 @@ const { composeWithMongoose } = require("graphql-compose-mongoose");
 
 const ProjectSchema = new Schema(
   {
-    projectName: String,
-    overallObjetives: String,
-    specificObjetives: String,
-    budget: String,
-    startDate: { 
+    projectName: {
+      type: String,
+      required: true,
+    },
+    overallObjetives:{
+      type: String,
+      required: true,
+    },
+    specificObjetives: {
+      type: String,
+      required: true,
+    },
+    budget: {
+      type: String,
+      required: true,
+    },
+    startDate: {
+      required: true, 
       type:Date,
       default: Date.now()
     },
-    finishDate: Date,
-    userDNI: String,
-    name: String,
+    finishDate: {
+      type: Date,
+      required: true,
+    },
+    userDNI: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
     projectStatus: {
+      required: true,
       type: String,
       default: "inactivo",
       enum: ["activo", "inactivo"],
     },
     projectPhase: {
+      required: true,
       type: String,
-      default: null,
+      default: "",
       enum: ["iniciado", "desarrollo", "terminado"],
     },
   },
